@@ -2,12 +2,12 @@ class House:
     """ДОМ"""
 
     def __init__(self):
-        self.numberOfFloors = 0
+        self.numberOfFloors = [0]
 
-    def setNewNumberOfFloors(self, item):
+    def setNewNumberOfFloors(self, floors):
+        self.numberOfFloors.append(floors)
         print(self.numberOfFloors)
-        print(item)
 
 
 my_house = House()
-my_house.setNewNumberOfFloors(item='floors')
+my_house.setNewNumberOfFloors(floors=10)
